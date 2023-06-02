@@ -1,5 +1,8 @@
 # Unity MultiBuild
 
+A fork of the original MultiBuild tool. This fork was made to keep this
+tool in a stable state for Unity 2021+.
+
 ## What it does
 
 Provides you with a simple in-editor interface to build for multiple platforms
@@ -64,10 +67,14 @@ cannot with the vanilla Unity command line build.
 
 ## Contributing
 
-I'm not going to be spending loads of time on this so if you want a new feature
+Since the original project is abandoned, I will try to maintain this repo in a stable
+state for the future Unity versions. If you find any problem, create an issue or
+if you want to add a feature or a fix, any PR is welcome!
+
+~~I'm not going to be spending loads of time on this so if you want a new feature
 or you find a problem with one of the targets (or want to add more of them),
 please fork and submit a pull request in the first instance. All contributions
-welcome!
+welcome!~~
 
 ## License (MIT)
 

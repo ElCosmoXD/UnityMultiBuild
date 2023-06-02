@@ -48,7 +48,7 @@ in Unity from the command line right now.
 * The scenes that are built are the ones you've selected in Build Settings
 * By default the project name is used as a base for all output, but you can
   disable that and provide a different name if you like
-* Your settings are saved in your project at `Assets/MultiBuild/MultiBuildSettings.asset`
+* Your settings are saved in your project at `Assets/MultiBuildSettings.asset`
 * After finishing the build, the active target is reset to whatever it was before
   you started the build
 * Be aware that I've only really tested this with the standalone builds right now

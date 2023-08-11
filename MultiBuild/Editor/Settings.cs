@@ -11,20 +11,15 @@ namespace MultiBuild
     {
         Win32 = 0,
         Win64 = 1,
-        Mac32 = 2,
-        Mac64 = 3,
-        Mac = 3, // now the default
-        MacUniversal = 4,
-        Linux64 = 6,
-        iOS = 7,
-        Android = 8,
-        WebGL = 9,
-        WinStore = 10,
-        PS4 = 12,
-        XboxOne = 13,
-        SamsungTV = 14,
-        tvOS = 17,
-        Switch = 18,
+        Mac64 = 2,
+        Linux64 = 3,
+        iOS = 4,
+        Android = 5,
+        WebGL = 6,
+        WinStore = 7,
+        PS4 = 8,
+        XboxOne = 9,
+        Switch = 10,
     }
 
     public class Settings : ScriptableObject

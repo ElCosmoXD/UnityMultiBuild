@@ -40,17 +40,13 @@ namespace MultiBuild
                         {Target.Android, "Android"},
                         {Target.iOS, "iOS"},
                         {Target.Linux64, "Linux 64-bit"},
-                        {Target.Mac32, "Mac 32-bit"},
                         {Target.Mac64, "Mac 64-bit"},
-                        {Target.MacUniversal, "Mac Universal"},
                         {Target.WebGL, "WebGL"},
                         {Target.Win32, "Windows 32-bit"},
                         {Target.Win64, "Windows 64-bit"},
                         {Target.WinStore, "Windows Store App"},
                         {Target.PS4, "Playstation 4"},
                         {Target.XboxOne, "Xbox One"},
-                        {Target.SamsungTV, "Samsung TV"},
-                        {Target.tvOS, "tvOS"},
                         {Target.Switch, "Nintendo Switch"},
                     };
                 }

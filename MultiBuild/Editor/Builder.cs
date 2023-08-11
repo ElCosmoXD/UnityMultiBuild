@@ -184,10 +184,7 @@ namespace MultiBuild
                     return BuildTarget.StandaloneWindows;
                 case Target.Win64:
                     return BuildTarget.StandaloneWindows64;
-                case Target.Mac:
-                case Target.Mac32:
-                    return BuildTarget.StandaloneOSX;
-                case Target.MacUniversal:
+                case Target.Mac64:
                     return BuildTarget.StandaloneOSX;
                 case Target.Linux64:
                     return BuildTarget.StandaloneLinux64;
@@ -203,8 +200,6 @@ namespace MultiBuild
                     return BuildTarget.PS4;
                 case Target.XboxOne:
                     return BuildTarget.XboxOne;
-                case Target.tvOS:
-                    return BuildTarget.tvOS;
                 case Target.Switch:
                     return BuildTarget.Switch;
                 default:

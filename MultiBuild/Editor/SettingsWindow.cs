@@ -341,13 +341,9 @@ namespace MultiBuild
                     }
 
                     if (EditorUserBuildSettings.activeBuildTarget != savedTarget)
-                    {
-#if UNITY_5_6_OR_NEWER
-                        EditorUserBuildSettings.SwitchActiveBuildTargetAsync(Builder.GroupForTarget(savedTarget), savedTarget);
-#else
-                        EditorUserBuildSettings.SwitchActiveBuildTarget(savedTarget);
-#endif
-                    }
+                        EditorUserBuildSettings.SwitchActiveBuildTarget(Builder.GroupForTarget(savedTarget), savedTarget);
+
+                    System.Threading.Thread.Sleep(1000);
 
                     return true;
                 });

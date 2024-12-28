@@ -121,18 +121,10 @@ namespace MultiBuild
                 {
                     return false; // cancelled
                 }
-#if UNITY_2018_1_OR_NEWER
+
                 var report = BuildPipeline.BuildPlayer(opts);
                 string err = report.summary.result == BuildResult.Succeeded ? string.Empty : "See log";
-#elif UNITY_5_5_OR_NEWER
-                var err = BuildPipeline.BuildPlayer(opts);
-#else
-                string err = BuildPipeline.BuildPlayer(
-                        opts.scenes,
-                        opts.locationPathName,
-                        opts.target,
-                        opts.options);
-#endif
+
                 if (!string.IsNullOrEmpty(err))
                 {
                     throw new InvalidOperationException(string.Format("Build error: {0}", err));
@@ -143,6 +135,8 @@ namespace MultiBuild
                 {
                     return false; // cancelled
                 }
+
+                System.Threading.Thread.Sleep(1000);
             }
             return true;
         }

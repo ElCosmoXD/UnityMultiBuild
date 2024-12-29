@@ -114,6 +114,7 @@ namespace MultiBuild
         {
             var buildSteps = SelectedBuildOptions(settings);
             int i = 1;
+
             foreach (var opts in buildSteps)
             {
                 if (callback != null &&

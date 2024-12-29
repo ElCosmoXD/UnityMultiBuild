@@ -327,6 +327,16 @@ namespace MultiBuild
             bool ok = true;
             try
             {
+                if(Settings.targets.Contains(Target.Android))
+                {
+                    bool missingPassword = PlayerSettings.Android.keyaliasPass == string.Empty || PlayerSettings.Android.keystorePass == string.Empty;
+                    if(missingPassword && EditorUserBuildSettings.buildAppBundle)
+                    {
+                        EditorUtility.DisplayDialog("Build error", "Keystore Alias or Keystore passwords are not set!", "Close");
+                        return;
+                    }
+                }
+
                 ok = Builder.Build(Settings, (opts, progress, done) =>
                 {
                     string message = done ?

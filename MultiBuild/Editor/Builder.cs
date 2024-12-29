@@ -233,7 +233,7 @@ namespace MultiBuild
                 o.locationPathName += ".exe";
 
             if (target == Target.Android)
-                o.locationPathName += EditorUserBuildSettings.buildAppBundle ? ".abb" : ".apk";
+                o.locationPathName += EditorUserBuildSettings.buildAppBundle ? ".aab" : ".apk";
 
             o.target = UnityTarget(target);
             BuildOptions opts = BuildOptions.None;

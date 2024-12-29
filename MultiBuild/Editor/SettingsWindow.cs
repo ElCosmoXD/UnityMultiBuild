@@ -369,6 +369,10 @@ namespace MultiBuild
             {
                 EditorUtility.DisplayDialog("Cancelled", "Build cancelled before finishing.", "Close");
             }
+
+            // Go back to the initial platform when the build finishes
+            if (EditorUserBuildSettings.activeBuildTarget != savedTarget)
+                EditorUserBuildSettings.SwitchActiveBuildTarget(Builder.GroupForTarget(savedTarget), savedTarget);
         }
 
     }
